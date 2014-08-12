@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Hooks and functions for the Views Content Translation Fallback module.
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function views_content_translation_fallback_views_api() {
+  return array(
+    'api' => 3.0,
+  );
+}
+

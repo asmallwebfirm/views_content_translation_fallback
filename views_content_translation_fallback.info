@@ -1,0 +1,11 @@
+name = Views: Content Translation Fallback
+description = Adds a Views filter handler that handles translation fallback
+package = Views
+core = 7.x
+
+; Module dependencies.
+dependencies[] = translation
+dependencies[] = views
+
+; Views handlers.
+files[] = handlers/views_handler_filter_content_language_fallback.inc
