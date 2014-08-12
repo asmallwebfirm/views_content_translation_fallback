@@ -36,7 +36,7 @@ class views_handler_filter_content_language_fallback extends views_handler_filte
   function options_form(&$form, &$form_state) {
     $form['fallback_language'] = array(
       '#title' => t('Fallback language'),
-      '#description' => t('If a piece of content is translated, but not into the current language, the '),
+      '#description' => t('Filters this view to content whose language is one of a) the current site language or b) "language neutral." In case the translation set for a given result does not include content that matches the aforementioned language criteria, it will fall back to showing content in the language configured above.'),
       '#type' => 'select',
       '#options' => $this->languageOptions(),
       '#default_value' => $this->options['fallback_language'],
